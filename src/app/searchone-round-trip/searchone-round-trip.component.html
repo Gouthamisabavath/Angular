@@ -1,0 +1,50 @@
+
+
+<div class="row d-flex justify-content-center">
+    <div class="col-sm-12">
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-sm-4">
+           <b> <a (click)="OneWay()" class="LinkStyle">OneWay</a> </b>
+       
+        </div> 
+
+        <div class="col-sm-4">
+           <b> <a (click)="RoundTrip()" class="LinkStyle">RoundTrip</a>  </b>
+        </div> 
+    </div>
+  </div>    
+  </div>
+ 
+  <div class="col-sm-10">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Flightnumber </th>
+                <th>Flightname</th>
+                <th>Flighttime</th>
+                <th>Oneway</th>
+                <th>OnewayPrice</th> 
+                <th>roundtrip</th>
+                <th>twowayPrice</th>
+              <th>Discount</th>
+              <th>FinalTicketprice</th>                 
+            </tr>
+        </thead>
+        <tbody>
+             <tr *ngFor="let ticket of onewayroundtrip"> 
+                <td>{{ticket.flightnumber}}</td>
+                <td>{{ticket.flightname}}</td>
+                <td>{{ticket.flighttime}} </td>                            
+                <td>{{ticket.oneway}} </td>
+                <td>{{ticket.onewayPrice}}</td>
+                 <td> {{ticket.roundtrip}}</td> 
+                <td> {{ticket.twowayPrice}}</td>
+                <td>{{ticket.discount}}</td>
+                <td>{{ticket.finalTicketprice}}</td>
+                  
+            <!-- <td><input type="button"  value="Cancel" class="btn-danger" /></td>  -->
+          </tr> 
+        </tbody>
+      </table>
+  </div>
+

@@ -1,0 +1,41 @@
+<form [formGroup]="Cancelform">
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-12">
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row" style="background-color:white;padding:10px;">
+                        <div class="col-sm-12">
+                            <h1>Cancel Ticket</h1>
+                        </div>
+                    </div>
+                   
+                    <div class="row" style="margin-bottom:10px;" visible=false>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-2"><b>Pnrnumber</b></div>
+                        <div class="col-sm-8">
+                            <input type="number" id="txtPnrnumber" formControlName="Pnrnumber" name="txtPnrnumber" class="form-control" placeholder="Pnrnumber" />
+                        </div>
+                        <div class="col-sm-1"></div>
+                    </div>
+                                    
+                    <div class="row" style="margin-bottom:10px;">
+                        <div class="col-sm-1"></div>
+                        <div class="row" style="margin-bottom:10px;margin-left: 100px;">
+                            <div class="col-sm-3"></div>
+                                <div class="col-sm-3">
+                                    <input type="button" id="btnsCancel" (click)="CancelTicketclick(Cancelform.value)" value="Cancel Ticket" class="btn-success" />
+                                </div>
+                               
+                                <div class="col-sm-3"></div>
+                                <div class="col-sm-1"></div>
+                            </div>
+    
+                        </div>
+                    </div>
+     
+            </div>
+    
+        </div>    
+    </div>
+    </form>

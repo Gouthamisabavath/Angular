@@ -1,0 +1,100 @@
+<form [formGroup]="ticketbookform">
+    <div class="row d-flex justify-content-center">
+    
+       
+            <div class="col-sm-6">       
+            <div class="row" style="background-color:white;padding:10px;">
+                <div class="col-sm-12">
+                    <h1>Booking Ticket</h1>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><b>Username</b></div>
+                <div class="col-sm-8">
+                    <input type="text" formControlName="Username" class="form-control" placeholder="Username" />
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><b>Booking Date</b></div>
+                <div class="col-sm-8">
+                    <input type="datetime-local" formControlName="Bookingdate" class="form-control"/>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><b> Flightnumber</b></div>
+                <div class="col-sm-8">
+                    <input type="text"  formControlName="Flightnumber" class="form-control" placeholder="Flight Number" />
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+                    
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><b> Passenger Email</b></div>
+                <div class="col-sm-8">
+                    <input type="email"  formControlName="PassengerEmail" class="form-control" placeholder="Passenger Email" />
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><b>Passenger Name</b></div>
+                <div class="col-sm-8">
+                    <input type="text" formControlName="PassengerName" class="form-control" placeholder="Passenger Name" />
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><b>No of Seats</b></div>
+                <div class="col-sm-8">
+                    <input type="text"  formControlName="Numberofseats" class="form-control" placeholder="Number Of Seats" />
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><b>Meal</b></div>
+                <div class="col-sm-8">
+                    <input type="text" formControlName="Optformeal" class="form-control" placeholder="Meal" />
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><b>Seat Numbers</b></div>
+                <div class="col-sm-8">
+                    <input type="text" formControlName="Seatnumbers" class="form-control" placeholder="Seat Numbers" />
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><b>Useremail </b></div>
+                <div class="col-sm-8">
+                    <input type="text" formControlName="Useremail" class="form-control" placeholder="Useremail" />
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+                 
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-1"></div>
+                <div class="row" style="margin-bottom:10px;margin-left: 100px;">
+                    <div class="col-sm-3"></div>
+                        <div class="col-sm-3">
+                            <input type="button" (click)="bookticketclick(ticketbookform.value)" id="btnbooktkt" value="Book Ticket" class="btn-success" />
+                        </div>
+                       
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-1"></div>
+                    </div>
+            </div>        
+            </div>
+        
+    </div>
+    </form>

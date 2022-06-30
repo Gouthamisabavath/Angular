@@ -1,0 +1,70 @@
+<form [formGroup]="registerform" >
+    <div class="row d-flex justify-content-center">
+    
+        
+        <div class="col-sm-6">
+            <div class="row" style="background-color:white;padding:10px;">
+                <div class="col-sm-12">
+                    <h1>Registration form</h1>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><b>User Name</b></div>
+                <div class="col-sm-8">
+                    <input type="text" formControlName="Username" class="form-control" placeholder="User Name" />
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><b> Email</b></div>
+                <div class="col-sm-8">
+                    <input type="text" formControlName="Email" class="form-control" placeholder="Enter Email" />
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><b> Password</b></div>
+                <div class="col-sm-8">
+                    <input type="password" formControlName="Password" class="form-control" placeholder="Enter Password" />
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            
+            
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><b> Gender</b></div>
+                <div class="col-sm-8"  >
+                    <input type="radio" formControlName="Gender" class="form" value="Male" />Male
+                    <input type="radio" formControlName="Gender" class="form" value="Female" />Female
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2"><b>Phone Number</b></div>
+                <div class="col-sm-8">
+                    <input type="number" formControlName="Phonenumber" class="form-control" placeholder="Phone Number" />
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row" style="margin-bottom:10px;">
+                <div class="col-sm-1"></div>
+                <div class="row" style="margin-bottom:10px;margin-left: 100px;">
+                    <div class="col-sm-3"></div>
+                        <div class="col-sm-3">
+                            <input type="button" id="btnRegister" (click)="register(registerform.value)" value="Register" class="btn-success" />
+                           
+                        </div>
+                       
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-1"></div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+            </form>

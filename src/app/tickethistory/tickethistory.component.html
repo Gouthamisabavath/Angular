@@ -1,0 +1,38 @@
+<div class="col-sm-12">
+    <div class="container"></div>
+    <div class="col-sm-12">
+        <div class="container">
+    <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Username </th>
+            <th>BookingDate</th>
+            <th>Flightnumber</th>
+            <th>PassengerEmail</th> 
+            <th>PassengerName</th>
+            <th>Numberofseats</th>
+            <th>Optformeal</th> 
+          <th>Seatnumbers</th>
+          <th>Pnrnumber</th>                 
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tbody>
+                 <tr *ngFor="let ticket of tickethistory"> 
+                <td>{{ticket.username}} </td>
+                <td>{{ticket.bookingdate}}</td>
+                <td>{{ticket.flightnumber}}</td>
+                <td>{{ticket.passengerEmail}}</td>
+                <td>{{ticket.passengerName}}</td>
+                <td>{{ticket.numberofseats}}</td>
+                <td>{{ticket.optformeal}} </td>
+                <td>{{ticket.seatnumbers}} </td>
+                <td>{{ticket.pnrnumber}} </td>
+                <!-- <td><input type="button"  value="Cancel" class="btn-danger" /></td>  -->
+              </tr> 
+            </tbody>
+  </table>
+</div>
+</div>
+

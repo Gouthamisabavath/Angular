@@ -1,0 +1,49 @@
+<form [formGroup]="loginform">
+    <div class="row d-flex justify-content-center">
+    <div class="col-sm-12">
+        
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-6">
+                <div class="row" style="background-color:white;padding:10px;">
+                    <div class="col-sm-12" >
+                        <h1 style="text-align: center;">Login</h1>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-2"><b>Email</b></div>
+                    <div class="col-sm-8">
+                        <input type="email" formControlName="email"  class="form-control" placeholder="Enter Email" />
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+                <div class="row" style="margin-bottom:10px;" visible=false>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-2"><b>Password</b></div>
+                    <div class="col-sm-8">
+                        <input type="password"  formControlName="Password" class="form-control" placeholder="Enter password" />
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+                                
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-sm-1"></div>
+                    <div class="row" style="margin-bottom:10px;margin-left: 100px;">
+                        <div class="col-sm-3"></div>
+                            <div class="col-sm-3">
+                                <input type="button" id="btnlogin" (click)="login(loginform.value)" value="Login" class="btn-success" />
+                            </div>
+                          
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-1"></div>
+                        </div>
+
+                    </div>
+                </div>
+               
+
+</div>
+
+</div>    
+        </div>
+    </form>
